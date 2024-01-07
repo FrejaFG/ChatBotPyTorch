@@ -18,7 +18,7 @@ from torch.utils.data import Dataset, DataLoader
 
 path = "C:/Users/Freja/Documents/Datamatiker/Hovedopgave/ChatBotPyTorch/intents.json"
 
-with open('intents.json', 'r') as f:
+with open('intents.json', 'r') as f: # r for read mode
     intents = json.load(f)
  
 
@@ -47,12 +47,13 @@ print(len(all_words), "unique stemmed words:", all_words)
 x_train = []
 y_train = []
 
+#Bag of words
 for (pattern_sentence, tag) in xy:
     bag = bag_of_words(pattern_sentence, all_words)
     x_train.append(bag)
     
     label = tags.index(tag)
-    y_train.append(label) #CrossEntropyLoss
+    y_train.append(label) #CrossEntropyLoss - ingen one hot
     
 x_train = np.array(x_train)
 y_train = np.array(y_train)
@@ -61,9 +62,9 @@ y_train = np.array(y_train)
 num_epochs = 1000
 batch_size = 8
 learning_rate = 0.001
-input_size = len(x_train[0])
+input_size = len(x_train[0]) #the number of each bag of words we created = all words
 hidden_size = 8
-output_size = len(tags)
+output_size = len(tags) # number of classes
 print(input_size, output_size)
 
 class ChatDataset(Dataset):
@@ -122,3 +123,4 @@ FILE = "data.pth"
 torch.save(data,FILE)
 
 print(f'training complete. file saved to {FILE}')
+#print(bag)

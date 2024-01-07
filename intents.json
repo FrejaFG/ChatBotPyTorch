@@ -39,9 +39,61 @@
         "What do you sell?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "We sell running gear",
+        "We have running gear"
       ]
+    },
+    {
+    "tag": "pronation",
+    "patterns": [
+    "shoes for pronation",
+    "which shoes are good for pronation",
+    "I have pronation",
+    "do i need pronation shoes",
+    "pronation"
+    ],
+    "responses": [
+    "We havde shoes for pronation",
+    "pronation shoes can support the knees",
+    "Try looking under 'special shoes'",
+    "if your ancle twist inwards during running, you could benefit from pronation shoes"
+    ]
+    },
+    {
+    "tag": "ultrarun",
+    "patterns": [
+    "gear for ultrarun",
+    "gear for ultramarathon",
+    "what do i need for a long run",
+    "what do I need for an ultramarathon",
+    "what do I need for an ultrarun?",
+    "long run",
+    "ultrarun",
+    "ultramarathon"
+    ],
+    "responses": [
+    "It is important to have enough water and nutrition for runs longer than 60 minutes",
+    "We have hydration vests for sale",
+    "We have gels and electrolytes for sale",
+    "be sure to check your gear before long runs",
+    "only eat food your stomach knows - to surprises on race day ;-)",
+    "don't use new shoes for a long race - use what you know works."
+    ]
+    },
+    {
+    "tag": "winter",
+    "patterns": [
+    "clothes for winter run",
+    "running clothes for winter",
+    "geaar for runing in winter",
+    "items for winter training"
+    ],
+    "responses":[
+    "you can find our winter clothing under regualr clothing",
+    "when you run in the winter a neckgaiter, gloves and a hat or headband can be a good idea",
+    "for winter running we recomend using layers you can take of during your run",
+    "if running in harsh conditions you may need snowspikes for your shoes - but we do unfortunately not sell those :-( "
+    ]
     },
     {
       "tag": "payments",
@@ -73,7 +125,9 @@
       "patterns": [
         "Tell me a joke!",
         "Tell me something funny!",
-        "Do you know a joke?"
+        "Do you know a joke?",
+        "joke",
+        "funny"
       ],
       "responses": [
         "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
